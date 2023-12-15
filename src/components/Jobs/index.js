@@ -65,7 +65,7 @@ class Jobs extends Component {
 
     const options = {
       headers: {
-        Authorization: Bearer ${jwtToken},
+        Authorization: `Bearer ${jwtToken}`,
       },
       method: 'GET',
     }
@@ -99,7 +99,7 @@ class Jobs extends Component {
     const apiUrl = 'https://apis.ccbp.in/profile'
     const options = {
       headers: {
-        Authorization: Bearer ${jwtToken},
+        Authorization: `Bearer ${jwtToken}`,
       },
       method: 'GET',
     }

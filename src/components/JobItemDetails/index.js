@@ -76,7 +76,7 @@ class JobItemDetails extends Component {
     const apiUrl = https://apis.ccbp.in/jobs/${id}
     const options = {
       headers: {
-        Authorization: Bearer ${jwtToken},
+        Authorization: `Bearer ${jwtToken}`,
       },
       method: 'GET',
     }
