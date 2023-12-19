@@ -61,7 +61,7 @@ class Jobs extends Component {
     } = this.state
     const employTypes = employmentTypesChecked.join(',')
     const jwtToken = Cookies.get('jwt_token')
-    const apiUrl = https://apis.ccbp.in/jobs?employment_type=${employTypes}&minimum_package=${activeSalaryRangeId}&search=${searchInput}
+    const apiUrl = `https://apis.ccbp.in/jobs?employment_type=${employTypes}&minimum_package=${activeSalaryRangeId}&search=${searchInput}`
 
     const options = {
       headers: {

@@ -73,7 +73,7 @@ class JobItemDetails extends Component {
 
     const jwtToken = Cookies.get('jwt_token')
 
-    const apiUrl = https://apis.ccbp.in/jobs/${id}
+    const apiUrl = `https://apis.ccbp.in/jobs/${id}`
     const options = {
       headers: {
         Authorization: `Bearer ${jwtToken}`,
